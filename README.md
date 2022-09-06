@@ -1,9 +1,7 @@
-# Fabric Example Mod
+# SkinHider
 
-## Setup
+A simple client-side mod to change all player’s skins to your own. You can find the latest build at [GitHub Actions](https://github.com/naturecodevoid/SkinHider/actions).
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+Requirements (make sure you have these installed when installing SkinHider):
+- [Cloth Config](https://modrinth.com/mod/cloth-config)
+- [Mod Menu](https://modrinth.com/mod/modmenu)
