@@ -1,4 +1,12 @@
 {
   "text.autoconfig.skinhider.title": "SkinHider Config",
-  "text.autoconfig.skinhider.option.enabled": "Enabled"
+  "text.autoconfig.skinhider.option.hideSkins": "Hide skins",
+  "text.autoconfig.skinhider.option.hideSkins.@Tooltip[0]": "If enabled, every player's skin",
+  "text.autoconfig.skinhider.option.hideSkins.@Tooltip[1]": "will be the same as your skin.",
+  "text.autoconfig.skinhider.option.hideCapes": "Hide capes",
+  "text.autoconfig.skinhider.option.hideCapes.@Tooltip[0]": "If enabled, every player's cape",
+  "text.autoconfig.skinhider.option.hideCapes.@Tooltip[1]": "will be the same as your cape.",
+  "text.autoconfig.skinhider.option.hideCapes.@Tooltip[2]": "This works with external capes",
+  "text.autoconfig.skinhider.option.hideCapes.@Tooltip[3]": "but will not work with fake players,",
+  "text.autoconfig.skinhider.option.hideCapes.@Tooltip[4]": "such as the NPCs in the Hypixel lobby."
 }

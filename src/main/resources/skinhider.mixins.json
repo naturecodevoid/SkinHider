@@ -4,6 +4,7 @@
   "package": "dev.naturecodevoid.skinhider.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "AbstractClientPlayerEntityAccessor"
   ],
   "client": [
     "PlayerListEntryMixin"
