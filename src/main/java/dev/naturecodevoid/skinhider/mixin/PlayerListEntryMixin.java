@@ -22,8 +22,9 @@ public class PlayerListEntryMixin {
     public void changePlayerSkin(CallbackInfoReturnable<Identifier> cir) {
         if (SkinHider.config.hideSkins && MinecraftClient.getInstance().player != null) {
             PlayerListEntry entry = ((AbstractClientPlayerEntityAccessor) MinecraftClient.getInstance().player).invokeGetPlayerListEntry();
-            if (entry.getProfile().getId() != profile.getId())
-                cir.setReturnValue(entry.getSkinTexture());
+            if (entry != null)
+                if (entry.getProfile().getId() != profile.getId())
+                    cir.setReturnValue(entry.getSkinTexture());
         }
     }
 
@@ -31,8 +32,9 @@ public class PlayerListEntryMixin {
     public void changePlayerModel(CallbackInfoReturnable<String> cir) {
         if (SkinHider.config.hideSkins && MinecraftClient.getInstance().player != null) {
             PlayerListEntry entry = ((AbstractClientPlayerEntityAccessor) MinecraftClient.getInstance().player).invokeGetPlayerListEntry();
-            if (entry.getProfile().getId() != profile.getId())
-                cir.setReturnValue(entry.getModel());
+            if (entry != null)
+                if (entry.getProfile().getId() != profile.getId())
+                    cir.setReturnValue(entry.getModel());
         }
     }
 
@@ -40,8 +42,9 @@ public class PlayerListEntryMixin {
     public void changePlayerCape(CallbackInfoReturnable<Identifier> cir) {
         if (SkinHider.config.hideCapes && MinecraftClient.getInstance().player != null) {
             PlayerListEntry entry = ((AbstractClientPlayerEntityAccessor) MinecraftClient.getInstance().player).invokeGetPlayerListEntry();
-            if (entry.getProfile().getId() != profile.getId())
-                cir.setReturnValue(entry.getCapeTexture());
+            if (entry != null)
+                if (entry.getProfile().getId() != profile.getId())
+                    cir.setReturnValue(entry.getCapeTexture());
         }
     }
 }
